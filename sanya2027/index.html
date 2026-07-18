@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edward & Cecilia's Wedding | Sanya 2027</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Hero Banner -->
+    <header class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-sub">JOIN US FOR THE WEDDING OF</p>
+            <h1 class="hero-title">Edward & Cecilia</h1>
+            <div class="hero-divider">
+                <span class="gold-line"></span>
+                <span class="gold-diamond"><i class="fa-regular fa-heart"></i></span>
+                <span class="gold-line"></span>
+            </div>
+            <p class="hero-details"><i class="fa-solid fa-calendar-days"></i> January 2, 2027</p>
+            <p class="hero-details"><i class="fa-solid fa-location-dot"></i> Sanya, Hainan</p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown-container" id="countdown">
+                <div class="countdown-box">
+                    <span class="time-val" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="time-val" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="time-val" id="minutes">00</span>
+                    <span class="time-label">Mins</span>
+                </div>
+                <div class="countdown-box">
+                    <span class="time-val" id="seconds">00</span>
+                    <span class="time-label">Secs</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <main class="main-container">
+        
+        <!-- Welcome Message -->
+        <section class="card-section welcome-section" id="welcome">
+            <h2 class="section-title">Save The Date</h2>
+            <div class="title-decoration"></div>
+            <p class="welcome-text">
+                With joyful hearts, we invite you to join us as we celebrate our marriage in the beautiful, tropical paradise of Sanya. 
+                Below you will find the celebration timeline and guide to help plan your journey. We cannot wait to share this unforgettable moment with our dearest family and friends.
+            </p>
+        </section>
+
+        <!-- Accommodation Detail -->
+        <section class="card-section accommodation-section" id="accommodation">
+            <div class="section-icon"><i class="fa-solid fa-hotel"></i></div>
+            <h2 class="section-title">Accommodations</h2>
+            <div class="title-decoration"></div>
+            <div class="hotel-highlight">
+                <h3>The St. Regis Sanya Yalong Bay Resort</h3>
+                <p class="hotel-sub">Yalong Bay National Resort District, Sanya, Hainan</p>
+                <div class="hotel-card-badge">Guest Accommodation Fully Covered</div>
+            </div>
+            <p class="accommodation-desc">
+                To make your stay comfortable, we are delighted to cover your room accommodations for two nights: 
+                <strong>January 1st (Check-in) to January 3rd (Check-out), 2027</strong>. 
+            </p>
+            <div class="info-alert-box">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Standard check-in time begins on January 1, 2027. Enjoy the world-class beach, pools, and resort amenities during your stay.</span>
+            </div>
+        </section>
+
+        <!-- Guest Itinerary -->
+        <section class="card-section itinerary-section" id="itinerary">
+            <div class="section-icon"><i class="fa-solid fa-clock"></i></div>
+            <h2 class="section-title">Wedding Itinerary</h2>
+            <div class="title-decoration"></div>
+            <p class="itinerary-intro">Click on each day to view details of our celebration timeline.</p>
+            
+            <div class="itinerary-tabs">
+                <button class="tab-btn active" onclick="switchDay(1)" id="tab-day1">
+                    <span class="tab-day">Day 1</span>
+                    <span class="tab-date">Jan 1st</span>
+                </button>
+                <button class="tab-btn" onclick="switchDay(2)" id="tab-day2">
+                    <span class="tab-day">Day 2</span>
+                    <span class="tab-date">Jan 2nd</span>
+                </button>
+                <button class="tab-btn" onclick="switchDay(3)" id="tab-day3">
+                    <span class="tab-day">Day 3</span>
+                    <span class="tab-date">Jan 3rd</span>
+                </button>
+            </div>
+
+            <!-- Day 1 Itinerary Content -->
+            <div class="timeline-container active" id="timeline-day1">
+                <div class="timeline-item">
+                    <div class="timeline-time">Afternoon</div>
+                    <div class="timeline-content">
+                        <h4>Guest Check-in & Arrival</h4>
+                        <p>Arrive at <strong>The St. Regis Sanya Yalong Bay Resort</strong>, check in to your room, and unpack. Feel free to explore the resort's private beach and tropical gardens.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">Evening</div>
+                    <div class="timeline-content">
+                        <h4>Welcome & Leisure Time</h4>
+                        <p>Relax and unwind. Take a stroll along Yalong Bay, enjoy a refreshing dip in the infinity pool, or dine at one of the resort's premium restaurants. The pre-wedding evening is yours to enjoy!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 Itinerary Content -->
+            <div class="timeline-container" id="timeline-day2">
+                <div class="timeline-item">
+                    <div class="timeline-time">12:00 PM</div>
+                    <div class="timeline-content">
+                        <h4>Guest Lunch</h4>
+                        <p>Enjoy a delicious lunch arranged by the couple at the resort to power up for the exciting day ahead.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">3:30 PM</div>
+                    <div class="timeline-content">
+                        <h4>Lawn Guest Arrival & Sign-in</h4>
+                        <p>We welcome you to join us at the beachfront wedding lawn. Enjoy refreshing fresh coconuts, customized drinks, and live string music as you sign in and take your seat.</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight-item">
+                    <div class="timeline-time">4:16 PM</div>
+                    <div class="timeline-content">
+                        <h4>Wedding Ceremony</h4>
+                        <p>Under the open skies and overlooking Yalong Bay, witness the ceremony where Edward & Cecilia exchange their vows and rings. <em>Please ensure you are seated by 4:10 PM.</em></p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">4:30 PM</div>
+                    <div class="timeline-content">
+                        <h4>Golden Hour Group Photos</h4>
+                        <p>Raise a toast and take group photos with the newlyweds against the scenic ocean sunset and sandy shore.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">6:10 PM</div>
+                    <div class="timeline-content">
+                        <h4>Banquet Reception</h4>
+                        <p>Take your seats in the lawn dining reception area. The night's banquet setup features customized treats and atmospheric lighting.</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight-item">
+                    <div class="timeline-time">6:36 PM</div>
+                    <div class="timeline-content">
+                        <h4>Grand Entrance & Appreciation Banquet</h4>
+                        <p>The banquet formally begins with the couple's grand entrance, speeches of gratitude, traditional cake cutting, and champagne toasts under cold-sparkler lighting.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">7:00 PM</div>
+                    <div class="timeline-content">
+                        <h4>Gala Dinner Served</h4>
+                        <p>A beautiful dinner is served table-to-table. Enjoy curated local delicacies while the couple makes rounds for toasts.</p>
+                    </div>
+                </div>
+                <div class="timeline-item highlight-item">
+                    <div class="timeline-time">8:00 PM</div>
+                    <div class="timeline-content">
+                        <h4>Performances & Evening Games</h4>
+                        <p>An interactive, joyful segment featuring dances, music, and fun games with red envelope rewards! The groom and the bride's father will perform a special duet on the Erhu, followed by a piano performance by the couple themselves.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">9:00 PM</div>
+                    <div class="timeline-content">
+                        <h4>Afterparty & Villa Gathering</h4>
+                        <p>As the main banquet concludes, young friends are invited to gather at the private villa to wind down the night with drinks, music, and great conversations.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 Itinerary Content -->
+            <div class="timeline-container" id="timeline-day3">
+                <div class="timeline-item">
+                    <div class="timeline-time">Morning</div>
+                    <div class="timeline-content">
+                        <h4>Farewell Breakfast</h4>
+                        <p>Enjoy a leisurely breakfast at the resort restaurant and capture any final beach photos before checkout.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">12:00 PM</div>
+                    <div class="timeline-content">
+                        <h4>Hotel Check-out</h4>
+                        <p>Official check-out time. We wish you a safe and pleasant journey back home, carrying beautiful memories of our time together in Sanya!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Travel Guide Section -->
+        <section class="card-section travel-section" id="travel">
+            <div class="section-icon"><i class="fa-solid fa-plane-departure"></i></div>
+            <h2 class="section-title">Travel & Getting There</h2>
+            <div class="title-decoration"></div>
+            
+            <div class="travel-block">
+                <h3><i class="fa-solid fa-plane"></i> Flight Directions</h3>
+                <div class="travel-options">
+                    <div class="travel-opt-card">
+                        <h4>Option A: Fly to Sanya (SYX)</h4>
+                        <p>Book a flight to <strong>Sanya Phoenix International Airport (SYX)</strong>. It is the most convenient option, located about a 40-minute taxi/Didi ride (approx. 35km) from The St. Regis Resort Yalong Bay.</p>
+                    </div>
+                    <div class="travel-opt-card">
+                        <h4>Option B: Fly to Haikou (HAK)</h4>
+                        <p>For more flight schedules, fly to <strong>Haikou Meilan International Airport (HAK)</strong>. Walk directly to the Haikou Meilan Airport High-Speed Train Station and take a high-speed train to <strong>Sanya Station</strong> (takes 1.5 to 2 hours). From Sanya Station, take a 25-minute taxi to Yalong Bay.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="travel-block visa-block">
+                <h3><i class="fa-solid fa-passport"></i> Hainan 59-Country Visa-Free Entry</h3>
+                <div class="visa-badge">Important for International Guests</div>
+                <p>
+                    Hainan Province offers a **59-country visa-free policy** for tourists. Citizens from eligible countries (including USA, Canada, UK, Australia, Singapore, EU countries, etc.) can travel to Hainan **visa-free for up to 30 days** if they enter directly from international locations.
+                </p>
+                <div class="info-alert-box warning-alert">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span><strong>Note:</strong> Registration through a Hainan-licensed travel agency is required before arrival. Please consult your airline or travel agent to complete this registration at least 48 hours before departure.</span>
+                </div>
+            </div>
+            
+            <div class="travel-block visa-block">
+                <h3><i class="fa-solid fa-earth-asia"></i> Traveling to Mainland China & Extended Stays</h3>
+                <p style="margin-bottom: 20px;">
+                    If you wish to extend your trip and visit other cities in Mainland China (such as Shanghai, Beijing, or Guangzhou) before or after our wedding, you have two primary options:
+                </p>
+                <div class="travel-options">
+                    <div class="travel-opt-card">
+                        <h4>Option A: 144-Hour Visa-Free Transit (Layovers)</h4>
+                        <p>Citizens of 54 countries (including USA, Canada, UK, Australia, Singapore) can stay in designated mainland regions for up to <strong>144 hours (6 days)</strong> without a visa. You must arrive from Country/Region A, transit through China, and depart to a different Country/Region B.</p>
+                        <p style="margin-top: 10px; font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--teal-light); padding-top: 10px;">
+                            <strong>Visa-Free Loophole:</strong> Because Hong Kong, Macau, and Taiwan count as separate regions, you can structure a route like <em>USA → Shanghai (144h transit) → Hong Kong → Sanya (30-day Hainan visa-free) → USA</em> to visit both regions completely visa-free!
+                        </p>
+                    </div>
+                    <div class="travel-opt-card">
+                        <h4>Option B: Standard Chinese Tourist Visa (L Visa)</h4>
+                        <p>If you plan to fly domestically within China (e.g., flying from <em>Beijing → Shanghai → Sanya</em>) or stay longer than 6 days in mainland China, you must apply for a standard <strong>L Tourist Visa</strong> at a Chinese consulate before your trip.</p>
+                        <p style="margin-top: 10px; font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--teal-light); padding-top: 10px;">
+                            <strong>Tip:</strong> US and Canadian citizens are typically eligible for 10-year multiple-entry visas, allowing unlimited domestic travel within China for up to 60 days per entry.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="travel-block">
+                <h3><i class="fa-solid fa-taxi"></i> Local Transit in Sanya</h3>
+                <ul>
+                    <li><strong>Didi (Ride-hailing):</strong> The Chinese equivalent of Uber. Accessible directly via the WeChat or Alipay apps (which support foreign credit cards). Highly recommended for easy navigation!</li>
+                    <li><strong>Taxis:</strong> Readily available at Sanya Airport and Sanya Train Station. Simply show the resort name in Chinese to the driver: <strong>三亚亚龙湾瑞吉度假酒店</strong>.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="wedding-footer">
+        <p>Made with love by Edward & Cecilia</p>
+        <p class="footer-hidden-tip">edwardxie.io/sanya2027</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
